@@ -13,10 +13,6 @@
 // console.log(combineAges, combineNames)
 
 // Type Alias || Surtom type
-
-
-
-
 // Literal Types
 
 
