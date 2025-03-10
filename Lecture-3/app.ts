@@ -14,31 +14,36 @@
 
 // Type Alias || custom type
 
-type Combinable = number | string;
-type ConversionType = "as-number" | "as-string";
+// type Combinable = number | string;
+// type ConversionType = "as-number" | "as-string";
 
-function combine (num1: Combinable, num2: Combinable, conversionType: ConversionType) {
-    let result;
-    if(typeof num1 === "number" && typeof num2 === "number" || conversionType === "as-number") {
-        result = +num1 + +num2;
-    }else{
-        result = num1.toString() + num2.toString();
-    }
-    return result
-}
+// function combine (num1: Combinable, num2: Combinable, conversionType: ConversionType) {
+//     let result;
+//     if(typeof num1 === "number" && typeof num2 === "number" || conversionType === "as-number") {
+//         result = +num1 + +num2;
+//     }else{
+//         result = num1.toString() + num2.toString();
+//     }
+//     return result
+// }
 
-type User = {
-    name: string;
-    age: number;
-    skills: string[]
-}
+// type User = {
+//     name: string;
+//     age: number;
+//     skills: string[]
+// }
 
-const user: User = {
-    name: "shahzad",
-    age: 20,
-    skills: ["React", "Node", "TypeScript"]
-}
+// const user: User = {
+//     name: "shahzad",
+//     age: 20,
+//     skills: ["React", "Node", "TypeScript"]
+// }
 
+
+// function greet(user: User) {
+// console.log("Hello, " + user.name);
+// }
+// greet(user)
 
 // Literal Types
 
