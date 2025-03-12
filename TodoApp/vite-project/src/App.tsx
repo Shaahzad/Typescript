@@ -14,10 +14,17 @@ function App() {
     }])
  }
 
+ const removeTodo = (TodoId: string) => {
+  const newTodo = todos.filter((todo : Todo)=> {
+    return todo.id !== TodoId
+  })
+  setTodos(newTodo)
+ }
+
   return ( 
-    <main className='max-w-6xl mx-auto'>
+    <main className='max-w-6xl mx-auto my-10 px-5 md:px-0'>
       <AddTodo onaddTodo = {addTodoHandler}/>
-    <Todolist items={todos}/>
+    <Todolist items={todos} onremovetodo={removeTodo}/>
     </main>
    )
 }

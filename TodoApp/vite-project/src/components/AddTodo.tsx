@@ -17,10 +17,11 @@ const AddTodo : React.FC<AddTodoProps> = (props) => {
    const submitHandler = (event: FormEvent) => {
         event.preventDefault()
         props.onaddTodo(text)
+        settext("")
    }
 
     return <form onSubmit={submitHandler} className="flex items-center gap-5">
-        <Input onChange={changeEventHandler} type="text" placeholder="Write a new Todo ..." className="w-fit"/>
+        <Input onChange={changeEventHandler} type="text" value={text} placeholder="Write a new Todo ..." className="w-fit"/>
         <Button type="submit">Add Todo</Button>
     </form>
 }
